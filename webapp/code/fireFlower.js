@@ -4,8 +4,8 @@
 */
 
 Mario.FireFlower = function(world, x, y) {
-	this.Width = 4;
-	this.Height = 24;
+	this.Width = 30;
+	this.Height = 30;
 	
 	this.World = world;
 	this.X = x;
