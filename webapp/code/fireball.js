@@ -4,7 +4,7 @@
 */
 
 Mario.Fireball = function(world, x, y, facing) {
-	this.GroundInertia = 0.89;
+	this.GroundInertia = 0.1;
 	this.AirInertia = 0.89;
 	
 	this.Image = Enjine.Resources.Images["particles"];
@@ -31,7 +31,7 @@ Mario.Fireball = function(world, x, y, facing) {
 Mario.Fireball.prototype = new Mario.NotchSprite();
 
 Mario.Fireball.prototype.Move = function() {
-	var i = 0, sideWaysSpeed = 8;
+	var i = 0, sideWaysSpeed = 1;
 	
 	if (this.DeadTime > 0) {
 		for (i = 0; i < 8; i++) {
