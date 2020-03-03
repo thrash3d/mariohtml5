@@ -1,0 +1,5 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - docker run -d -p 8080:8080 thrash3d/docker-supermario
